@@ -1,8 +1,9 @@
-CREATE TABLE dados (
-    AlunoID int,
-    Nome varchar(50),
-    Sobrenome varchar(50),
-    Endereco varchar(150),
-    Cidade varchar(50),
-    Host varchar(50)
+CREATE TABLE Alunos (
+    AlunoID INT PRIMARY KEY IDENTITY(1,1), 
+    Nome VARCHAR(50) NOT NULL,              
+    Sobrenome VARCHAR(50) NOT NULL,
+    Endereco VARCHAR(150),
+    Cidade VARCHAR(50),
+    Host VARCHAR(50),
+    DataCadastro DATETIME DEFAULT GETDATE() 
 );
